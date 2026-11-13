@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shuzhen Li — PhD Candidate in Finance</title>
+  <title>Shuzhen Li — PhD Candidate in Finance, Utrecht University</title>
+  <meta name="description" content="Shuzhen Li, PhD candidate in Finance at Utrecht University School of Economics. Behavioural and experimental economics, behavioural finance, sustainable finance, economics of AI. On the 2026–2027 academic job market." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,13 +15,13 @@
 <!-- ── Navigation ── -->
 <nav>
   <div class="nav-inner">
-    <a class="nav-brand" href="#" onclick="showPage('home')">Shuzhen Li</a>
+    <a class="nav-brand" href="#home">Shuzhen Li</a>
     <ul>
-      <li><a href="#" data-page="home"          class="active" onclick="showPage('home')">Home</a></li>
-      <li><a href="#" data-page="research"       onclick="showPage('research')">Research</a></li>
-      <li><a href="#" data-page="conferences"    onclick="showPage('conferences')">Conferences</a></li>
-      <li><a href="#" data-page="teaching"       onclick="showPage('teaching')">Teaching</a></li>
-      <li><a href="#" data-page="cv"             onclick="showPage('cv')">CV</a></li>
+      <li><a href="#home"          data-page="home" class="active">Home</a></li>
+      <li><a href="#research"      data-page="research">Research</a></li>
+      <li><a href="#presentations" data-page="presentations">Presentations</a></li>
+      <li><a href="#teaching"      data-page="teaching">Teaching</a></li>
+      <li><a href="#cv"            data-page="cv">CV</a></li>
     </ul>
   </div>
 </nav>
@@ -30,15 +31,11 @@
 ═══════════════════════════════════════════════ -->
 <main id="page-home" class="page">
 
-  <div class="hero">
-    <img src="self.jpg" alt="Shuzhen Li" class="hero-photo" width="900" height="1125" />
-    <div>
-      <h1 class="hero-name">Shuzhen Li</h1>
-      <p class="hero-title">
-        PhD Candidate in Finance<br>
-        Utrecht University School of Economics<br>
-        Utrecht, the Netherlands
-      </p>
+  <div class="home-grid">
+
+    <!-- left column: photo, contact, fields -->
+    <aside class="home-side">
+      <img src="self.jpg" alt="Shuzhen Li" class="hero-photo" width="900" height="1125" />
 
       <div class="hero-contact">
         <a href="mailto:s.li3@uu.nl">
@@ -51,40 +48,58 @@
         </span>
       </div>
 
-      <div class="tags">
-        <span class="tag">Behavioural &amp; Experimental Economics</span>
-        <span class="tag">Behavioural Finance</span>
-        <span class="tag">Sustainable Finance</span>
-        <span class="tag">Economics of AI &amp; Technology Adoption</span>
-      </div>
-    </div>
-  </div>
+      <address class="hero-address">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>
+          Room 2.08, Adam Smith Hall<br>
+          Kriekenpitplein 21&ndash;22<br>
+          3584&nbsp;EC Utrecht<br>
+          the Netherlands
+        </span>
+      </address>
 
+      <div class="side-label">Research Fields</div>
+      <ul class="field-list">
+        <li>Behavioural &amp; Experimental Economics</li>
+        <li>Behavioural Finance</li>
+        <li>Sustainable Finance</li>
+        <li>Economics of AI &amp; Technology Adoption</li>
+      </ul>
+    </aside>
+
+  <!-- right column: name + about -->
   <div class="about-text">
-    <h2 class="page-title">About</h2>
+    <h1 class="hero-name">Shuzhen Li</h1>
+    <p class="hero-title">
+      PhD Candidate in Finance<br>
+      Utrecht University School of Economics, Utrecht, the Netherlands
+    </p>
     <hr class="page-rule" />
     <p>
+      <span class="welcome">Welcome to my page!</span>
       I am a PhD candidate in Finance at the
       <a href="https://www.uu.nl/staff/SLi" target="_blank" rel="noopener">Utrecht University School of Economics</a>,
-      supervised by Dr.&nbsp;Yilong Xu, Dr.&nbsp;Paul van Bruggen, and Prof.&nbsp;Kees Koedijk.
+      supervised by Dr.&nbsp;<a class="person" href="https://sites.google.com/view/yilongxu/home" target="_blank" rel="noopener">Yilong Xu</a>, Dr.&nbsp;<a class="person" href="https://sites.google.com/site/bruggenpvan/" target="_blank" rel="noopener">Paul van Bruggen</a>, and Prof.&nbsp;Kees Koedijk.
+      I am on the 2026&ndash;2027 academic job market.
       My research sits at the intersection of behavioural economics, finance, and emerging technology.
     </p>
     <p>
       I study how people form beliefs and make decisions in the face of generative AI,
-      sustainability trade-offs, and fairness dilemmas. My work combines controlled laboratory
-      and online experiments with structural inference to generate evidence that speaks to both
-      theory and policy.
+      sustainability trade-offs, and fairness dilemmas. My work uses controlled laboratory
+      and online experiments to generate evidence that speaks to both theory and policy.
     </p>
     <p>
-      Before joining Utrecht, I completed an MSc in Behavioural Economics at the China Center for
+      Before joining Utrecht, I completed an MRes in Behavioural Economics at the China Center for
       Behavioral Economics and Finance, Southwestern University of Finance and Economics (SWUFE),
       and a double bachelor's degree in Management and Economics, also at SWUFE.
     </p>
     <p style="margin-top:1.5rem;">
-      <button class="link-btn" onclick="showPage('research')">View my research &rarr;</button>
+      <a class="link-btn" href="#research">View my research &rarr;</a>
       &nbsp;&nbsp;
-      <button class="link-btn" onclick="showPage('cv')">Download CV &rarr;</button>
+      <a class="link-btn" href="#cv">Download CV &rarr;</a>
     </p>
+  </div>
+
   </div>
 
 </main>
@@ -97,59 +112,83 @@
   <h2 class="page-title">Research</h2>
   <hr class="page-rule" />
 
-  <p class="sub-heading" style="margin-top:0;">Working Papers</p>
+  <!-- Job Market Paper -->
+  <h3 class="sub-heading">Job Market Paper</h3>
 
-  <div class="paper">
-    <div class="paper-title">Misperceiving the Frontier: Managerial Beliefs and the Allocation of AI</div>
-    <div class="paper-authors">with Oliver Hauser and Yilong Xu</div>
-    <div class="paper-status">
-      June 2026 Working Paper &middot;
-      <a href="https://ssrn.com/abstract=7031019" target="_blank" rel="noopener">Available at SSRN</a>
+  <div class="paper paper-featured" id="paper-jmp">
+    <div class="paper-title">Misplaced Optimism: Beliefs and Behaviors outside AI&rsquo;s Jagged Technological Frontier</div>
+    <div class="paper-authors">
+      with <a class="person" href="https://oliverhauser.org" target="_blank" rel="noopener">Oliver Hauser</a>
+      and <a class="person" href="https://sites.google.com/view/yilongxu/home" target="_blank" rel="noopener">Yilong Xu</a>
     </div>
-    <button class="abstract-toggle" onclick="toggleAbstract(this)">Show abstract ↓</button>
-    <div class="abstract-body">
-      Generative AI is a prominent example of a broader challenge firms face when adopting new technologies: 
-      the benefits are often uneven across tasks and workers, exhibiting a "jagged technological frontier." 
-      We study whether managers anticipate this heterogeneity and how the information environment affects deployment. 
-      In a linked worker–manager experiment, workers complete real-effort tasks with and without generative AI, 
-      allowing us to estimate AI effects by task and worker. Managers then predict AI-assisted performance and make incentivized deployment decisions. 
-      Without feedback, almost all managers expect AI to improve performance on average on both sides of the frontier, even outside it, where AI does not add value. 
-      Performance feedback reduces average optimism, but substantial overestimation remains for outside-frontier tasks. 
-      We further examine incentive-compatible deployment decisions for two new tasks (one inside and one outside the frontier). 
-      Managers' willingness to pay (WTP) is high across all tasks, and even higher for the outside-frontier task. 
-      Providing task-by-task feedback, together with a summary page ranking tasks by realized AI effects, removes this gap, reducing WTP for the outside-frontier task relative to the inside-frontier task. 
-      Controlling for changes in managers' average beliefs does not reduce this change.
+    <div class="paper-meta">
+      <span class="paper-status">Under review &mdash; Management Science</span>
+      <a href="https://ssrn.com/abstract=7031019" target="_blank" rel="noopener">Paper (SSRN)</a>
+    </div>
+    <div class="abstract-body open">
+      Generative AI is a prominent example of a broader challenge firms face when adopting new technologies:
+      the benefits are often uneven across tasks and workers, exhibiting a &ldquo;jagged technological frontier.&rdquo;
+      We study whether managers anticipate this heterogeneity and how the information environment affects
+      deployment. In a linked worker&ndash;manager experiment, workers complete real-effort tasks with and without
+      generative AI, allowing us to estimate AI effects by task and worker. Managers then predict AI-assisted
+      performance and make incentivized deployment decisions. Without feedback, almost all managers expect AI to
+      improve performance on average on both sides of the frontier, even outside it, where AI does not add value.
+      Performance feedback reduces average optimism, but substantial overestimation remains for outside-frontier
+      tasks. We further examine incentive-compatible deployment decisions for two new tasks (one inside and one
+      outside the frontier). Managers&rsquo; willingness to pay (WTP) is high across all tasks, and even higher for
+      the outside-frontier task. Providing task-by-task feedback, together with a summary page ranking tasks by
+      realized AI effects, removes this gap, reducing WTP for the outside-frontier task relative to the
+      inside-frontier task. Controlling for changes in managers&rsquo; average beliefs does not reduce this change.
     </div>
   </div>
 
-  <div class="paper">
-    <div class="paper-title">Fifty-five Crowd-Sourced Designs Assessing Carbon Pricing Support in the U.S</div>
-    <div class="paper-authors">with Yilong Xu and Juergen Huber et al.</div>
-    <span class="paper-status">Accepted &mdash; Nature Human Behaviour</span>
-    <button class="abstract-toggle" onclick="toggleAbstract(this)">Show abstract ↓</button>
+  <!-- Publications -->
+  <h3 class="sub-heading">Publications</h3>
+
+  <div class="paper" id="paper-carbon">
+    <div class="paper-title">Fifty-five Crowd-Sourced Designs Assessing Carbon Pricing Support</div>
+    <div class="paper-authors">
+      Holzknecht, A., Schwaiger, R., Blanco, E.,
+      Huber, J.,
+      Kirchler, M., and co-authors (forthcoming)
+    </div>
+    <div class="paper-meta">
+      <span class="paper-status">Forthcoming &mdash; Nature Human Behaviour</span>
+    </div>
+    <div class="paper-note">
+      Full co-author in a many-lab collaboration. Designed one experiment with
+      <a class="person" href="https://sites.google.com/view/yilongxu/home" target="_blank" rel="noopener">Yilong Xu</a> (team SUQ30).
+    </div>
+    <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">Show abstract</button>
     <div class="abstract-body">
       Carbon pricing is widely regarded as an effective and cost-efficient climate policy, yet public support
-      remains limited. This crowdsourced "many-design" project evaluates 55 behavioral interventions designed
+      remains limited. This crowdsourced &ldquo;many-design&rdquo; project evaluates 55 behavioral interventions designed
       by independent research teams and implemented simultaneously with nearly 20,000 U.S. residents. Across
       interventions, effects on support for carbon pricing are positive but small, increasing support by
       roughly two percentage points. The study also finds modest between-study heterogeneity and substantial
       overconfidence among researchers regarding intervention effectiveness.
-      <br><br>
-      <span class="accent">Note:</span> As one of the participating teams, Yilong Xu and I are
-      interested in the following question: although carbon taxes benefit most households through rebates,
-      public support remains low, in part because people poorly understand how rebates are distributed. We
-      contribute by conducting an experiment with two treatments testing whether detailed information about
-      the costs and benefits of a carbon tax, especially the rebate distribution, increases stated support for
-      the policy and the likelihood of choosing the green product in an incentivized choice task.
+      <p class="abstract-note">
+        <span class="accent">Our contribution:</span> As one of the participating teams, Yilong Xu and I are
+        interested in the following question: although carbon taxes benefit most households through rebates,
+        public support remains low, in part because people poorly understand how rebates are distributed. We
+        contribute by conducting an experiment with two treatments testing whether detailed information about
+        the costs and benefits of a carbon tax, especially the rebate distribution, increases stated support for
+        the policy and the likelihood of choosing the green product in an incentivized choice task.
+      </p>
     </div>
   </div>
 
-  <p class="sub-heading">Work in Progress</p>
+  <!-- Working Papers -->
+  <h3 class="sub-heading">Working Papers</h3>
 
-  <div class="paper">
+  <div class="paper" id="paper-returns">
     <div class="paper-title">Beyond Returns: Probing the Resilience of Sustainability Preferences</div>
-    <div class="paper-authors">with Peiran Jiao, Kees Koedijk, and Yilong Xu</div>
-    <button class="abstract-toggle" onclick="toggleAbstract(this)">Show abstract ↓</button>
+    <div class="paper-authors">
+      with <a class="person" href="https://peiranjiao.wordpress.com/" target="_blank" rel="noopener">Peiran Jiao</a>,
+      Kees Koedijk, and
+      <a class="person" href="https://sites.google.com/view/yilongxu/home" target="_blank" rel="noopener">Yilong Xu</a>
+    </div>
+    <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">Show abstract</button>
     <div class="abstract-body">
       A central debate in sustainable finance is whether investors will sacrifice financial performance to
       pursue sustainability. Existing studies focus on expected performance. But what happens when the true
@@ -168,14 +207,17 @@
     </div>
   </div>
 
-  <div class="paper">
+  <div class="paper" id="paper-veil">
     <div class="paper-title">Sustainable Decisions Under the Veil of Ignorance</div>
-    <div class="paper-authors">with Oliver Hauser and Yilong Xu</div>
-    <button class="abstract-toggle" onclick="toggleAbstract(this)">Show abstract ↓</button>
+    <div class="paper-authors">
+      with <a class="person" href="https://oliverhauser.org" target="_blank" rel="noopener">Oliver Hauser</a>
+      and <a class="person" href="https://sites.google.com/view/yilongxu/home" target="_blank" rel="noopener">Yilong Xu</a>
+    </div>
+    <button class="abstract-toggle" onclick="toggleAbstract(this)" aria-expanded="false">Show abstract</button>
     <div class="abstract-body">
       Global efforts to combat climate change are often hindered by conflicting national interests and economic
       disparities, making fair resource allocation a persistent challenge. The Veil of Ignorance, a framework
-      proposed by John Rawls, elicits individuals' impartial fairness preferences by removing personal biases.
+      proposed by John Rawls, elicits individuals&rsquo; impartial fairness preferences by removing personal biases.
       This study applies the Veil of Ignorance in an experimental setting to examine how individuals allocate
       resources across generations and productivity levels, and assesses its impact on fairness in
       decision-making. Results show that when participants know their assigned roles, they allocate resources
@@ -186,119 +228,166 @@
     </div>
   </div>
 
+  <!-- Work in Progress -->
+  <h3 class="sub-heading">Work in Progress</h3>
+
+  <div class="paper paper-compact" id="paper-aicomp">
+    <div class="paper-title">AI, Competition, and Endogenous Skill Investment</div>
+    <div class="paper-authors">
+      with <a class="person" href="https://oliverhauser.org" target="_blank" rel="noopener">Oliver Hauser</a>
+      and <a class="person" href="https://sites.google.com/view/yilongxu/home" target="_blank" rel="noopener">Yilong Xu</a>
+    </div>
+    <div class="paper-note">Laboratory experiment; ethics application submitted.</div>
+  </div>
+
+  <div class="paper paper-compact">
+    <div class="paper-title">Correcting Probability Weighting</div>
+    <div class="paper-authors">
+      with <a class="person" href="https://sites.google.com/site/bruggenpvan/" target="_blank" rel="noopener">Paul van Bruggen</a>
+    </div>
+    <div class="paper-note">Theory and online experiment; design stage.</div>
+  </div>
+
 </main>
 
 <!-- ══════════════════════════════════════════════
-     PAGE: CONFERENCES
+     PAGE: PRESENTATIONS
 ═══════════════════════════════════════════════ -->
-<main id="page-conferences" class="page hidden">
+<main id="page-presentations" class="page hidden">
 
-  <h2 class="page-title">Conferences &amp; Seminars</h2>
+  <h2 class="page-title">Conference &amp; Seminar Presentations</h2>
   <hr class="page-rule" />
 
-  <div class="conf-year-label">2026</div>
 
-  <div class="conf-entry">
-    <div class="conf-date">Sep 2026</div>
-    <div class="conf-name">mEEting Seminar Series</div>
-    <div class="conf-venue">Tilburg University, the Netherlands</div>
-    <div class="conf-pres">Presentation: AI, Competition, and Endogenous Skill Investment</div>
-  </div>
-  
-  <div class="conf-entry">
-    <div class="conf-date">Sep 2026</div>
-    <div class="conf-name">2026 European Meeting of the Economic Science Association (ESA)</div>
-    <div class="conf-venue">Universitat Pompeu Fabra, Spain</div>
-    <div class="conf-pres">Presentation: Misplaced Optimism: Beliefs and Behaviours outside AI's Jagged Technological Frontier</div>
-  </div>
-
-  <div class="conf-entry">
-    <div class="conf-date">Jun 2026</div>
-    <div class="conf-name">3rd Annual Conference of the Network of Behavioural and Experimental Economists</div>
-    <div class="conf-venue">University of Exeter, United Kingdom</div>
-    <div class="conf-pres">Participant</div>
-  </div>
-
-  <div class="conf-entry">
-    <div class="conf-date">Jun 2026</div>
-    <div class="conf-name">Foundations of Utility and Risk Conference (FUR)</div>
-    <div class="conf-venue">University of Alicante, Spain</div>
-    <div class="conf-pres">Presentation: Beyond Returns: Probing the Resilience of Sustainability Preferences</div>
-  </div>
-
-  <div class="conf-entry">
-    <div class="conf-date">Apr 2026</div>
-    <div class="conf-name">Symposium on Behavioural AI in Education, Work, and Decision-Making</div>
-    <div class="conf-venue">ESSCA School of Management, Paris, France</div>
-    <div class="conf-pres">Presentation: Misplaced Optimism: Beliefs and Behaviours outside AI's Jagged Technological Frontier</div>
-  </div>
-
-  <div class="conf-year-label">2025</div>
-
-  <div class="conf-entry">
-    <div class="conf-date">Sep 2025</div>
-    <div class="conf-name">Utrecht University Alumni Network Event</div>
-    <div class="conf-venue">The Hague, the Netherlands</div>
-    <div class="conf-pres">Public Lecture: Investing in Green</div>
-  </div>
-
-  <div class="conf-entry">
-    <div class="conf-date">Jun 2025</div>
-    <div class="conf-name">17th Maastricht Behavioural and Experimental Economics Symposium (M-BEES)</div>
-    <div class="conf-venue">Maastricht University, the Netherlands</div>
-    <div class="conf-pres">Presentation: Sustainable Decisions Under the Veil of Ignorance</div>
-  </div>
-
-  <div class="conf-entry">
-    <div class="conf-date">Jun 2025</div>
-    <div class="conf-name">3rd European Sustainable Finance PhD Workshop</div>
-    <div class="conf-venue">ESCP Business School (Turin), Italy</div>
-    <div class="conf-pres">Presentation: Beyond Returns: Probing the Resilience of Sustainability Preferences</div>
-  </div>
-
-  <div class="conf-year-label">2024</div>
-
-  <div class="conf-entry">
-    <div class="conf-date">Jun 2024</div>
-    <div class="conf-name">Experimental Finance Conference</div>
-    <div class="conf-venue">University of Stavanger, Norway</div>
-    <div class="conf-pres">Participant</div>
-  </div>
-
-  <div class="conf-entry">
-    <div class="conf-date">Mar 2024</div>
-    <div class="conf-name">Experimental Sustainable Finance Symposium</div>
-    <div class="conf-venue">Radboud University, the Netherlands</div>
-    <div class="conf-pres">Participant</div>
+  <!-- 2026 -->
+  <div class="conf-year">
+    <div class="conf-year-label">2026</div>
+    <ul class="conf-list">
+      <li class="conf-entry">
+        <div class="conf-main">
+          <span class="conf-name">C-BID Behavioral and Experimental Economics Job Market Workshop</span>,
+          <span class="conf-venue">NYU Abu Dhabi, United Arab Emirates</span>
+          <span class="conf-month">Nov</span>
+        </div>
+        <div class="conf-papers">
+          <a class="pill" href="#research" onclick="goPaper('jmp'); return false;">Misplaced Optimism (JMP)</a>
+        </div>
+      </li>
+      <li class="conf-entry">
+        <div class="conf-main">
+          <span class="conf-name">mEEting Seminar Series</span>,
+          <span class="conf-venue">Tilburg University, the Netherlands</span>
+          <span class="conf-month">Oct</span>
+        </div>
+        <div class="conf-papers">
+          <a class="pill" href="#research" onclick="goPaper('jmp'); return false;">Misplaced Optimism (JMP)</a>
+        </div>
+      </li>
+      <li class="conf-entry">
+        <div class="conf-main">
+          <span class="conf-name">European Meeting of the Economic Science Association (ESA)</span>,
+          <span class="conf-venue">Universitat Pompeu Fabra, Barcelona, Spain</span>
+          <span class="conf-month">Sep</span>
+        </div>
+        <div class="conf-papers">
+          <a class="pill" href="#research" onclick="goPaper('jmp'); return false;">Misplaced Optimism (JMP)</a>
+        </div>
+      </li>
+      <li class="conf-entry">
+        <div class="conf-main">
+          <span class="conf-name">mEEting Seminar Series</span>,
+          <span class="conf-venue">Tilburg University, the Netherlands</span>
+          <span class="conf-month">Sep</span>
+        </div>
+        <div class="conf-papers">
+          <a class="pill" href="#research" onclick="goPaper('aicomp'); return false;">AI, Competition, and Endogenous Skill Investment</a>
+        </div>
+      </li>
+      <li class="conf-entry">
+        <div class="conf-main">
+          <span class="conf-name">Foundations of Utility and Risk Conference (FUR)</span>,
+          <span class="conf-venue">University of Alicante, Spain</span>
+          <span class="conf-month">Jun</span>
+        </div>
+        <div class="conf-papers">
+          <a class="pill" href="#research" onclick="goPaper('returns'); return false;">Beyond Returns: Resilience of Sustainability Preferences</a>
+        </div>
+      </li>
+      <li class="conf-entry">
+        <div class="conf-main">
+          <span class="conf-name">Symposium on Behavioural AI in Education, Work, and Decision-Making</span>,
+          <span class="conf-venue">ESSCA School of Management, Paris, France</span>
+          <span class="conf-month">Apr</span>
+        </div>
+        <div class="conf-papers">
+          <a class="pill" href="#research" onclick="goPaper('jmp'); return false;">Misplaced Optimism (JMP)</a>
+        </div>
+      </li>
+    </ul>
   </div>
 
-  <div class="conf-entry">
-    <div class="conf-date">Feb 2024</div>
-    <div class="conf-name">Internal Seminar</div>
-    <div class="conf-venue">Utrecht University, the Netherlands</div>
-    <div class="conf-pres">Presentation: Beyond Returns: Probing the Resilience of Sustainability Preferences</div>
+  <!-- 2025 -->
+  <div class="conf-year">
+    <div class="conf-year-label">2025</div>
+    <ul class="conf-list">
+      <li class="conf-entry">
+        <div class="conf-main">
+          <span class="conf-name">17th Maastricht Behavioural and Experimental Economics Symposium (M-BEES)</span>,
+          <span class="conf-venue">Maastricht University, the Netherlands</span>
+          <span class="conf-month">Jun</span>
+        </div>
+        <div class="conf-papers">
+          <a class="pill" href="#research" onclick="goPaper('veil'); return false;">Sustainable Decisions Under the Veil of Ignorance</a>
+        </div>
+      </li>
+      <li class="conf-entry">
+        <div class="conf-main">
+          <span class="conf-name">3rd European Sustainable Finance PhD Workshop</span>,
+          <span class="conf-venue">ESCP Business School, Turin, Italy</span>
+          <span class="conf-month">Jun</span>
+        </div>
+        <div class="conf-papers">
+          <a class="pill" href="#research" onclick="goPaper('returns'); return false;">Beyond Returns: Resilience of Sustainability Preferences</a>
+        </div>
+      </li>
+    </ul>
   </div>
 
-  <h2 class="page-title" style="margin-top:3rem;">Professional Training</h2>
-  <hr class="page-rule" />
-
-  <div class="conf-entry">
-    <div class="conf-date">2026</div>
-    <div class="conf-name">Designing Field Experiments</div>
-    <div class="conf-venue">IGL Masterclass Series &middot; Online</div>
+  <!-- 2024 -->
+  <div class="conf-year">
+    <div class="conf-year-label">2024</div>
+    <ul class="conf-list">
+      <li class="conf-entry">
+        <div class="conf-main">
+          <span class="conf-name">Internal Seminar</span>,
+          <span class="conf-venue">Utrecht University, the Netherlands</span>
+          <span class="conf-month">Feb</span>
+        </div>
+        <div class="conf-papers">
+          <a class="pill" href="#research" onclick="goPaper('returns'); return false;">Beyond Returns: Resilience of Sustainability Preferences</a>
+        </div>
+      </li>
+    </ul>
   </div>
 
-  <div class="conf-entry">
-    <div class="conf-date">2024</div>
-    <div class="conf-name">Experimental Finance Summer School</div>
-    <div class="conf-venue">Society for Experimental Finance &middot; University of Stavanger, Norway</div>
-  </div>
+  <h3 class="sub-heading">Other Conferences Attended</h3>
+  <ul class="plain-list">
+    <li><strong>2026</strong> &nbsp;3rd Annual Conference of the Network of Behavioural and Experimental Economists, University of Exeter, United Kingdom</li>
+    <li><strong>2024</strong> &nbsp;Experimental Finance Conference, University of Stavanger, Norway</li>
+    <li><strong>2024</strong> &nbsp;Experimental Sustainable Finance Symposium, Radboud University, the Netherlands</li>
+  </ul>
 
-  <div class="conf-entry">
-    <div class="conf-date">2024</div>
-    <div class="conf-name">Financial Economics of Climate and Sustainability</div>
-    <div class="conf-venue">Global PhD Course &middot; Online</div>
-  </div>
+  <h3 class="sub-heading">Additional Training</h3>
+  <ul class="plain-list">
+    <li><strong>2026</strong> &nbsp;Designing Field Experiments, IGL Masterclass Series</li>
+    <li><strong>2024</strong> &nbsp;Experimental Finance Summer School, Society for Experimental Finance, University of Stavanger</li>
+    <li><strong>2024</strong> &nbsp;Financial Economics of Climate and Sustainability, Global PhD Course</li>
+  </ul>
+
+  <h3 class="sub-heading">Public Engagement</h3>
+  <ul class="plain-list">
+    <li><strong>2025</strong> &nbsp;&ldquo;Investing in Green,&rdquo; public lecture, Utrecht University Alumni Network Event, The Hague</li>
+  </ul>
 
 </main>
 
@@ -307,26 +396,62 @@
 ═══════════════════════════════════════════════ -->
 <main id="page-teaching" class="page hidden">
 
-  <h2 class="page-title">Teaching &amp; Supervision</h2>
+  <h2 class="page-title">Teaching &amp; Service</h2>
   <hr class="page-rule" />
 
-  <div class="teach-block">
-    <div class="teach-role">Teaching Assistant</div>
-    <div class="teach-institution">Utrecht University School of Economics</div>
-    <div class="teach-detail">
-      <strong>Multinational Corporate Finance</strong> (Master's level)<br>
-      Tutorial teaching &middot; Utrecht, the Netherlands &middot; 2023 – present
+  <h3 class="sub-heading" style="margin-top:0;">Teaching</h3>
+  <div class="edu-entry">
+    <div>
+      <div class="edu-degree">Teaching Assistant, Multinational Corporate Finance</div>
+      <div class="edu-detail">Utrecht University School of Economics &middot; Master&rsquo;s level, 5 ECTS &middot; Tutorial teaching</div>
+    </div>
+    <div class="edu-date">2023 &ndash; present</div>
+  </div>
+
+  <h3 class="sub-heading">Supervision</h3>
+  <div class="edu-entry">
+    <div>
+      <div class="edu-degree">Master&rsquo;s Thesis Supervision</div>
+      <div class="edu-detail">
+        First supervisor of four MSc theses (one in 2025, three in 2026), including topics on board gender
+        diversity, green-investor sentiment, and AI-sector valuations. Second reader of four further MSc theses.
+      </div>
+    </div>
+    <div class="edu-date">2025 &ndash; 2026</div>
+  </div>
+
+  <h3 class="sub-heading">Academic Service</h3>
+  <div class="edu-entry">
+    <div>
+      <div class="edu-degree">Journal referee</div>
+      <div class="edu-detail"><em>Journal of Behavioral and Experimental Finance</em></div>
     </div>
   </div>
 
-  <div class="teach-block">
-    <div class="teach-role">Master's Thesis Supervision</div>
-    <div class="teach-institution">Utrecht University School of Economics</div>
-    <div class="teach-detail">
-      Supervised three students in 2026 and one student in 2025 on topics including board gender
-      diversity, green-investor sentiment, and AI-sector valuations.
+  <h3 class="sub-heading">Other Research Experience</h3>
+  <div class="edu-entry">
+    <div>
+      <div class="edu-degree">Research Assistant, Laboratory of Experimental Economics, SWUFE</div>
+      <div class="edu-detail">
+        Research assistant on a study by Soo Hong Chew and Richard Ebstein. Led a research-assistant team
+        studying the effects of neurotransmitters on decision-making. Developed
+        experimental protocols and conducted a pilot study with more than 100 participants using pharmacological
+        and placebo treatments.
+      </div>
     </div>
+    <div class="edu-date">Nov 2021 &ndash; Apr 2023</div>
   </div>
+  <div class="edu-entry">
+    <div>
+      <div class="edu-degree">Manager and Analyst, Eurasia Institute</div>
+      <div class="edu-detail">
+        Co-organized two international forums on politics and economics. Conducted research on industrial
+        organization and artificial intelligence for institutional strategic planning.
+      </div>
+    </div>
+    <div class="edu-date">Apr 2021 &ndash; Mar 2022</div>
+  </div>
+
 
 </main>
 
@@ -339,18 +464,18 @@
   <hr class="page-rule" />
 
   <div class="cv-actions">
-    <a href="CV_Shuzhen_Li.pdf" download class="btn">Download CV (PDF)</a>
-    <a href="CV_Shuzhen_Li.pdf" target="_blank" rel="noopener" class="btn-ghost">Open in new tab &rarr;</a>
+    <a href="CV_Shuzhen_Li__Job_Market_.pdf" download="CV_Shuzhen_Li.pdf" class="btn">Download CV (PDF)</a>
+    <a href="CV_Shuzhen_Li__Job_Market_.pdf" target="_blank" rel="noopener" class="btn-ghost">Open in new tab &rarr;</a>
   </div>
 
-  <p class="cv-note">Last updated July 2026</p>
+  <p class="cv-note">Last updated November 2026</p>
 
   <div class="pdf-frame">
-    <object data="CV_Shuzhen_Li.pdf#view=FitH" type="application/pdf">
-      <iframe src="CV_Shuzhen_Li.pdf#view=FitH" title="Curriculum Vitae — Shuzhen Li"></iframe>
+    <object data="CV_Shuzhen_Li__Job_Market_.pdf#view=FitH" type="application/pdf">
+      <iframe src="CV_Shuzhen_Li__Job_Market_.pdf#view=FitH" title="Curriculum Vitae — Shuzhen Li"></iframe>
       <div class="pdf-fallback">
         <p>Your browser cannot display PDFs inline.</p>
-        <p><a href="CV_Shuzhen_Li.pdf" target="_blank" rel="noopener">Open the CV in a new tab &rarr;</a></p>
+        <p><a href="CV_Shuzhen_Li__Job_Market_.pdf" target="_blank" rel="noopener">Open the CV in a new tab &rarr;</a></p>
       </div>
     </object>
   </div>
@@ -362,56 +487,54 @@
   <p>Shuzhen Li &middot; Utrecht University School of Economics &middot;
     <a href="mailto:s.li3@uu.nl">s.li3@uu.nl</a>
   </p>
-  <p class="footer-address">Room 2.08, Adam Smith Hall &middot; Kriekenpitplein 21&ndash;22, 3584&nbsp;EC Utrecht &middot; the Netherlands</p>
 </footer>
 
 <script>
-  const pages = ['home', 'research', 'conferences', 'teaching', 'cv'];
+  const pages = ['home', 'research', 'presentations', 'teaching', 'cv'];
 
   // toggle the abstract that follows the clicked button
   function toggleAbstract(btn) {
     const body = btn.nextElementSibling;
     const isOpen = body.classList.toggle('open');
-    btn.textContent = isOpen ? 'Hide abstract ↑' : 'Show abstract ↓';
+    btn.textContent = isOpen ? 'Hide abstract' : 'Show abstract';
+    btn.setAttribute('aria-expanded', isOpen);
   }
 
-  function showPage(id) {
-    // hide all pages
-    pages.forEach(p => {
-      document.getElementById('page-' + p).classList.add('hidden');
-    });
-
-    // show target
-    document.getElementById('page-' + id).classList.remove('hidden');
-
-    // update nav active state
+  function showPage(id, scroll = true) {
+    if (!pages.includes(id)) id = 'home';
+    pages.forEach(p => document.getElementById('page-' + p).classList.toggle('hidden', p !== id));
     document.querySelectorAll('nav [data-page]').forEach(a => {
       a.classList.toggle('active', a.dataset.page === id);
     });
-
-    // update URL hash without scrolling
-    history.replaceState(null, '', '#' + id);
-
-    // scroll to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (location.hash !== '#' + id) history.replaceState(null, '', '#' + id);
+    if (scroll) window.scrollTo({ top: 0 });
   }
 
-  // load correct page on initial load (from hash or default to home)
-  const hash = location.hash.replace('#', '');
-  if (pages.includes(hash)) {
-    showPage(hash);
+  // jump to a paper on the Research page, open its abstract, and highlight it briefly
+  function goPaper(key) {
+    showPage('research', false);
+    const el = document.getElementById('paper-' + key);
+    if (!el) return;
+    const body = el.querySelector('.abstract-body');
+    const btn  = el.querySelector('.abstract-toggle');
+    if (body && btn && !body.classList.contains('open')) toggleAbstract(btn);
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    el.classList.remove('flash');
+    void el.offsetWidth;
+    el.classList.add('flash');
   }
 
-  // follow the hash when it changes on an already-loaded page (back/forward, shared links)
-  window.addEventListener('hashchange', () => {
-    const h = location.hash.replace('#', '');
-    if (pages.includes(h)) showPage(h);
+  // nav links: switch page without the browser jumping to an anchor
+  document.querySelectorAll('nav a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      showPage(a.getAttribute('href').slice(1));
+    });
   });
 
-  // prevent # jump on nav link clicks (already handled by showPage)
-  document.querySelectorAll('nav a[data-page]').forEach(a => {
-    a.addEventListener('click', e => e.preventDefault());
-  });
+  // initial load + back/forward
+  showPage(location.hash.slice(1) || 'home', false);
+  window.addEventListener('hashchange', () => showPage(location.hash.slice(1)));
 </script>
 
 </body>
